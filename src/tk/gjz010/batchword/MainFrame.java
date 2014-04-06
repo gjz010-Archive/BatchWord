@@ -10,6 +10,7 @@ import java.awt.Image;
 import java.awt.Toolkit;
 import java.io.BufferedInputStream;
 import java.io.InputStream;
+import java.util.Map;
 import javax.swing.JOptionPane;
 
 
@@ -18,11 +19,15 @@ import javax.swing.JOptionPane;
  * @author Administrator
  */
 public class MainFrame extends javax.swing.JFrame {
-
+    public static Map<String,String> map;
+    
     /**
      * Creates new form MainFrame
      */
     public MainFrame() {
+        try{
+        map=Unsolver.getstrs();}
+        catch(Exception e){e.printStackTrace();}
         initComponents();
     }
     public static OutputFrame opt=new OutputFrame();
@@ -58,7 +63,7 @@ public class MainFrame extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel1.setText("<html>\n<h3>批量查词使用说明</h3>\n用空格隔开每一个词。<br>\n所有词语解释来自汉典(www.zdic.net)。<br>\n解释可能与现代汉语词典不符，以现代汉语词典为准。<br>\n</html>");
+        jLabel1.setText("<html>\n<h3>批量查词使用说明</h3>\n用空格隔开每一个词。<br>\n所有词语解释来自第六版现代汉语词典。<br>\n</html>");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,7 +110,7 @@ public class MainFrame extends javax.swing.JFrame {
         }
         for(String w:words){
             int i=opt.addWord(w);
-            new SearchThread(i,w).start();
+            //new SearchThread(i,w).start();
         }
         opt.setVisible(true);
         this.setVisible(false);

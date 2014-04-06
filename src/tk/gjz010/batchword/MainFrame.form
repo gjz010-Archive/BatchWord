@@ -92,7 +92,7 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;h3&gt;&#x6279;&#x91cf;&#x67e5;&#x8bcd;&#x4f7f;&#x7528;&#x8bf4;&#x660e;&lt;/h3&gt;&#xa;&#x7528;&#x7a7a;&#x683c;&#x9694;&#x5f00;&#x6bcf;&#x4e00;&#x4e2a;&#x8bcd;&#x3002;&lt;br&gt;&#xa;&#x6240;&#x6709;&#x8bcd;&#x8bed;&#x89e3;&#x91ca;&#x6765;&#x81ea;&#x6c49;&#x5178;(www.zdic.net)&#x3002;&lt;br&gt;&#xa;&#x89e3;&#x91ca;&#x53ef;&#x80fd;&#x4e0e;&#x73b0;&#x4ee3;&#x6c49;&#x8bed;&#x8bcd;&#x5178;&#x4e0d;&#x7b26;&#xff0c;&#x4ee5;&#x73b0;&#x4ee3;&#x6c49;&#x8bed;&#x8bcd;&#x5178;&#x4e3a;&#x51c6;&#x3002;&lt;br&gt;&#xa;&lt;/html&gt;"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;h3&gt;&#x6279;&#x91cf;&#x67e5;&#x8bcd;&#x4f7f;&#x7528;&#x8bf4;&#x660e;&lt;/h3&gt;&#xa;&#x7528;&#x7a7a;&#x683c;&#x9694;&#x5f00;&#x6bcf;&#x4e00;&#x4e2a;&#x8bcd;&#x3002;&lt;br&gt;&#xa;&#x6240;&#x6709;&#x8bcd;&#x8bed;&#x89e3;&#x91ca;&#x6765;&#x81ea;&#x7b2c;&#x516d;&#x7248;&#x73b0;&#x4ee3;&#x6c49;&#x8bed;&#x8bcd;&#x5178;&#x3002;&lt;br&gt;&#xa;&lt;/html&gt;"/>
       </Properties>
     </Component>
   </SubComponents>

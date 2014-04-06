@@ -43,7 +43,7 @@ public class OutputFrame extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("查询结果 Ctrl-A->Ctrl-C复制成文本");
         setIconImage(MainFrame.getIcon());
 
@@ -136,8 +136,8 @@ public class OutputFrame extends javax.swing.JFrame {
         DefaultTableModel tm=(DefaultTableModel) jTable1.getModel();
         Vector v=new Vector();
         v.add(word);
-        v.add("查询中...");
-        v.add("查询中...");
+        v.add("test");
+        v.add(BatchWordApplet.map.get(word));
         tm.addRow(v);
         return tm.getRowCount()-1;
     }
